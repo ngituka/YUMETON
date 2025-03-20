@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ <html lang="fr">
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>Y U M E T O N</title>
+	<!--ajout de l'icone d'un onglet-->
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+	<!--nouveaux liens-->
+	<link rel="stylesheet" href="../css/CWAD_general.css">
+    <link rel="stylesheet" href="../css/CWAD_contact.css">
+
+	<!--j'ajoute la police "monsterrat" qui correspond à peu près à celle du "shatter the void"-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!--j'ajoute la police "bebas neue" qui servira uniquement pour les titres-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+	 <!--references javascript-->
+	 <script src="../script/CWAD_animations.js"></script>
+  </head>
+
+  <body>
+
+   
+    <!-- barre de navigation -->
+    <nav class="navigation">
+		<a href="CWAD_accueil.html"><img class="logo_yumeton" src="../images/yumeton_petit_format.png" alt="YUMETON"></a>
+		<div class="nav_elements">
+			<a href="CWAD_activites.html">Activités</a>
+			<a class="ici" href="CWAD_contact.html">Contactez-nous</a>
+		</div>
+    </nav>
+
+    
+	
+<!--header : le message d'accueil de la page -->
+    <header>
+		<h1 class="titles" id="top">Contactez-nous !</h1>
+		<p class="largerText">Sur cette page :</p>
+		<div class="summary">
+			<p><a href="#contact">Nos contacts</a></p>
+			<p><a href="#location">Venez à notre siège à Seoul !</a></p>
+			<p><a href="#inscription">Inscrivez-vous !</a></p>			
+		</div>
+
+	</header>
+
+	<main>
+		<!--liste qui contient les liens vers les différentes pages de Yumeton-->
+
+		<!--section où l'on peut retrouver les contacts des créateurs du site-->
+		<section id="contact">
+			<h2 class="titles">Nos contacts :</h2>
+			<h3>Indy</h3>
+                <p>numéro de téléphone : 06 12 34 56 78</p>
+                <p>adresse mail : ________</p>
+            <h3>Jannie</h3>
+                <p>numéro de téléphone : 06 12 81 03 21</p>
+                <p>adresse mail : janniengoyituka@icloud.com</p>
+            <!--embed google maps, descriptif irl yumeton-->
+		</section>
+        <section>
+            <h2 class="titles" id="location">Venez à notre siège à Seoul !</h2>
+            <div class="iframe-container">
+				<iframe 
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50648.029568368234!2d127.0250393966008!3d37.49608024537557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4235fb589fb%3A0xb331971bc570bb6a!2zR2FuZ25hbS1ndSwgU8Opb3VsLCBDb3LDqWUgZHUgU3Vk!5e0!3m2!1sfr!2sfr!4v1732756272568!5m2!1sfr!2sfr"
+					style="border:0;" 
+					allowfullscreen="" 
+					loading="lazy" 
+					referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>			
+        </section>
+		<section id="inscription">
+		<h3 class="titles">Inscrivez-vous!</h3>
+        <p>Nous sommes ravis de voir que Yumeton vous plaît tant que ça!</p>
+			<form method="post" action="CWAD_accueil.html">
+				<!---->
+				<label for="u_nom">nom</label>
+				<br>
+				<input id="u_nom" type="text" placeholder="nom" required>
+				<br>
+				<label for="u_prénom">prénom</label>
+				<br>
+				<input oninput="updateFirstName()" id="u_prénom" type="text" placeholder="prénom" required>
+				<br>
+				<label for="u_mail">adresse mail</label>
+				<br>
+				<input id="u_mail" type="text" placeholder="adresse mail" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+				<!--pattern pour l'email trouvé sur w3schools.com-->
+				<br>
+				<label for="u_bookdate">date de réservation</label>
+				<br>
+				<input id="u_bookdate" type="date" min="2025-01-01">
+				<br>
+				<input id="u_policy" class="u_policy" type="checkbox">
+				<label for="u_policy">Je souhaite recevoir un rappel une semaine avant l'évènement.</label>
+				<br>
+				<input type="submit" value="c'est parti !">
+				<input type="reset" value="je recommence">
+			</form>
+		</section>
+	</main>
+	<a href="#top" class="back_to_top">Retour en haut de page</a>
+	
+	<!--noms des créateurs de la page et rapport-->
+	<footer>
+		<div class="footer_text">	
+			<p>Site internet d'Indy Ait-Youcef et de Jannie Ngoy Ituka, du groupe 1C</p>
+			<a href="https://youtu.be">rapport pdf</a>
+			<a href="https://youtu.be">rapport docx</a>
+		</div>
+		<img src="../images/iut_orsay.png" alt="logo de l'IUT d'Orsay, notre établissement d'enseignement supérieur." class="logo_orsay">
+	</footer>
+  
+  </body>
+
+</html>

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@media (max-width: 1060px) {
+    main .activites_web {
+        display: grid;  
+        grid-template-rows: 1fr 1fr 1fr;
+        min-height:30%;
+        margin-top:1.5rem;
+    }
+}
+
+
+@media (min-width: 1060px) {
+    main .activites_web{
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+main article, main .titre_activites_web, main .yumeton_premium{
+    max-width: 73%;
+    min-height: 50%;
+    margin: 10px auto;
+    background: black;
+    padding: 0 1.5rem 1.5rem;
+    transition: background-color 0.3s;
+}
+
+main article:hover {
+    background: rgb(235, 137, 181);
+    color: black;
+}
+
+main article:hover .titles {
+    color: black;
+}
+
+
+
+.icones{
+    max-width: 30%;
+    background-color: transparent;
+}
+
+.yumeton_premium{
+    background:black;
+
+}
+
+.yumeton_premium ul{
+    list-style: none;
+}
+
+.modalites{
+    color:crimson;
+}
+
