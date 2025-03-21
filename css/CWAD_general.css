@@ -58,7 +58,7 @@ nav img {
     margin-right: 10px;
 }
 
-@media (max-device-width: 900px) {
+@media (max-device-width: 900px) or (max-width: 900px){
     nav {
         display: flex;
         flex-direction: column;
@@ -127,13 +127,13 @@ footer:hover{
     color:rgb(252,114,166);
     text-decoration: underline;
 }
-@media (max-device-width:565px){
+@media (max-device-width:565px) or (max-width: 565px){
     .logo_orsay{
         width:65%;
     }
 }
 
-@media (min-device-width:565px){
+@media (min-device-width:565px) or (max-width: 565px){
     .logo_orsay{
         width:40%;
     }

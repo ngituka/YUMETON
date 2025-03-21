@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (max-device-width: 1060px) {
+@media (max-device-width: 1060px) or (max-width: 1060px){
     main .activites_web {
         display: grid;  
         grid-template-rows: 1fr 1fr 1fr;
@@ -10,7 +10,7 @@
 }
 
 
-@media (min-device-width: 1060px) {
+@media (min-device-width: 1060px) or (min-width: 1060px){
     main .activites_web{
         display: grid;  
         grid-template-columns: 1fr 1fr 1fr;
