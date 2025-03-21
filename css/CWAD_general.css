@@ -43,7 +43,7 @@ nav {
     z-index:1;
 }
 
-@media (max-width: 900px) {
+@media (min-device-width: 700px) {
     nav {
         align-items: center;
         display: flex;
@@ -63,7 +63,7 @@ nav img {
     margin-right: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-device-width: 700px) {
     nav {
         display: flex;
         flex-direction: column;
