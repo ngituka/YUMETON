@@ -41,14 +41,9 @@ nav {
     position: sticky;
     top: 0;
     z-index:1;
-}
-
-@media (min-device-width: 700px) {
-    nav {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav img {
@@ -63,7 +58,7 @@ nav img {
     margin-right: 10px;
 }
 
-@media (max-device-width: 700px) {
+@media (max-device-width: 900px) {
     nav {
         display: flex;
         flex-direction: column;
@@ -83,6 +78,7 @@ nav img {
         margin: auto;
     }
 }
+
 
 .ici{
     border-bottom:solid 2px rgb(235,137,181);
